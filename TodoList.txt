@@ -1,0 +1,10 @@
+List for things to do for Cardbinder
+
+1. Make a basic page that I can pull up info from a card
+	1. pull up info 
+	2. possibly show image
+2. Store information of cards 
+3. Improve the UI 
+4. Make a database.
+5. show price trends. 
+6. TBD
