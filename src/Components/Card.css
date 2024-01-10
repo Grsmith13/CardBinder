@@ -1,0 +1,21 @@
+.card-container {
+  max-height: fit-content;
+  max-width: 500px;
+  border: 1px solid black;
+  display: flex;
+  gap: 1rem;
+  background-color: #ddb7a2;
+}
+
+.card-image {
+  padding: 1rem;
+}
+
+.card-information {
+  padding-right: 1rem;
+}
+
+img {
+  width: 244.844px;
+  height: 343.844px;
+}

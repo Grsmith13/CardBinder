@@ -13,24 +13,33 @@ const Menu = ({ onSearch }) => {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
-      <h4>
-        <strong>Card Search</strong>
-      </h4>
-      <label className="required" htmlFor="card name">
-        card name
-      </label>
-      <input
-        type="card name"
-        id="card name"
-        name="card name"
-        placeholder="Enter card name"
-        value={cardName}
-        onChange={handleInputChange}
-        required
-      />
-      <button type="submit">Search</button>
-    </form>
+    <>
+      <form
+        style={{
+          background: "lightgrey",
+          padding: "0 1rem 0 1rem",
+          borderTop: "1px solid black",
+          borderRight: "1px solid black",
+          borderLeft: "1px solid black",
+        }}
+        onSubmit={handleSubmit}
+      >
+        <h4>
+          <strong>Card Search</strong>
+        </h4>
+        <label className="required" htmlFor="card name"></label>
+        <input
+          type="card name"
+          id="card name"
+          name="card name"
+          placeholder="Enter card name"
+          value={cardName}
+          onChange={handleInputChange}
+          required
+        />
+        <button type="submit">Search</button>
+      </form>
+    </>
   );
 };
 

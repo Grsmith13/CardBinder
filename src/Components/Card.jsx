@@ -1,25 +1,34 @@
-import React from "react";
-import Axios from "./Axios";
+import { useState, useEffect } from "react";
+import { getData } from "./CreateCache";
+import "./Card.css";
+const Card = ({ data }) => {
+  console.log(data);
 
-export const Card = ({ cardProp }) => {
-  if (cardProp === undefined) {
-    return <p>Loading...</p>;
-  }
-  const { name, type, desc } = cardProp || [];
-  console.log(cardProp);
   return (
-    <div>
-      <h2>Card Info</h2>
-      {name ? (
-        <>
-          <p>Name: {name}</p>
-          <p>Type: {type}</p>
-          <p>Description: {desc}</p>
-        </>
-      ) : (
-        <p>Loading...</p>
-      )}
-    </div>
+    <>
+      <div className="card-container">
+        <div className="card-image">
+          <img
+            src="https://img-9gag-fun.9cache.com/photo/aZyoZDV_460s.jpg"
+            alt="facedown yugioh card"
+          />
+        </div>
+        <div className="card-information">
+          <p>
+            <strong>{data.name}</strong>
+          </p>
+          <p>
+            Attribute and Monster/Card Type: {data.attribute}/{data.race}/
+            {data.type}
+          </p>
+          <p className="card-desc">Text/Effect: {data.desc}</p>
+          <p>
+            ATK/{data.atk} DEF/{data.def}
+          </p>
+        </div>
+      </div>
+    </>
   );
 };
+
 export default Card;
