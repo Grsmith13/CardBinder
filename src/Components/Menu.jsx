@@ -27,11 +27,11 @@ const Menu = ({ onSearch }) => {
         <h4>
           <strong>Card Search</strong>
         </h4>
-        <label className="required" htmlFor="card name"></label>
+        <label className="required" htmlFor="ygo name"></label>
         <input
-          type="card name"
-          id="card name"
-          name="card name"
+          type="ygo name"
+          id="ygo name"
+          name="ygo name"
           placeholder="Enter card name"
           value={cardName}
           onChange={handleInputChange}
