@@ -1,10 +1,3 @@
-# React + Vite
+Ongoing project to develop a Yugioh card application to manage and view trading card collections. 
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-Webiste link is  https://steady-pasca-ff1b5a.netlify.app/
+Webiste link is  [https://steady-pasca-ff1b5a.netlify.app/](https://steady-pasca-ff1b5a.netlify.app/)
